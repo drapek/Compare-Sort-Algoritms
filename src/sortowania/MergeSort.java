@@ -2,7 +2,6 @@ package sortowania;
 
 
 import java.util.Random;
-import sortowania.SortingAlgorithm;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
