@@ -64,35 +64,5 @@ public class MergeSort implements SortingAlgorithm {
     }
 
   }
-    public static void main(String[] args) {
-        // TODO code application logic here
-            
-        double[] tablicaMerge = new double[SORTINGARRAYLENGTH];
-
-        
-        Random rnd = new Random();
-        
-        for(int i = 0; i < SORTINGARRAYLENGTH; i++) {
-            tablicaMerge[i] = rnd.nextDouble();
-        }
-          
-        System.out.println("Tablica merge przed: ");
-        for(double elem : tablicaMerge) {
-            System.out.println("    " + elem);
-        }
-        
-        MergeSort mergeSort = new MergeSort();
-        
-        long startTime = System.nanoTime();
-        tablicaMerge = mergeSort.sort(tablicaMerge);
-        long estimatedTime = System.nanoTime() - startTime;
-        
-        System.out.println("Tablica merge po: ");
-        for(double elem : tablicaMerge) {
-            System.out.println("    " + elem);
-        }
-        
-        System.out.println("Czas sortowania merge tablicy " + SORTINGARRAYLENGTH + " elementowej to: " + estimatedTime + " nanosekonds");
-    }
     
 }

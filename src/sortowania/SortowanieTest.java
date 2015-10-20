@@ -38,6 +38,19 @@ public class SortowanieTest {
         testujSortowanie("insert", "worst", startArrayLength, numberRepeatsOfSortingArrays, incrementNextArrayLength, printsArrays, printTimesInCSV);
         System.out.println();
         
+        System.out.println("###########################Sortowanie przez scalanie##################################\n");
+        System.out.println("Sortowanie tablicy randomowej: ");
+        testujSortowanie("merge", "random", startArrayLength, numberRepeatsOfSortingArrays, incrementNextArrayLength, printsArrays, printTimesInCSV);
+        System.out.println();
+        
+        System.out.println("Sortowanie tablicy optymistycznej (posrotowanej): ");
+        testujSortowanie("merge", "best", startArrayLength, numberRepeatsOfSortingArrays, incrementNextArrayLength, printsArrays, printTimesInCSV);
+        System.out.println();
+        
+
+        System.out.println("Sortowanie tablicy pesimistycznej (posrotowanej w odwrotym kierunku): ");
+        testujSortowanie("merge", "worst", startArrayLength, numberRepeatsOfSortingArrays, incrementNextArrayLength, printsArrays, printTimesInCSV);
+        System.out.println();
     }
     
     private static void testujSortowanie(String typSortowania, String wybranyPrzypadek, int arrayLength, int numberRepeatsOfSortingArrays, int incrementNextArrayLength,
